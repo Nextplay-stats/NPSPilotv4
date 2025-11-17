@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Next Play Stats</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topnav">
+    <div class="brand">
+      <img src="assets/logo.png" alt="Next Play Stats" class="logo">
+      <span class="site-title">NEXT PLAY STATS</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="roles.html">Dashboards</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="actions">
+      <button id="contrastToggle" aria-pressed="false">Contrast</button>
+      <button id="loginBtn">Login</button>
+    </div>
+  </header>
+
+  <main class="hero">
+    <h1>Performance dashboards for players coaches and teams</h1>
+    <p>Quickly view dashboards. Public now. Role restrictions later.</p>
+    <a class="cta" href="roles.html">Open Dashboards</a>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="firebase-config.js"></script>
+  <!-- Firebase SDK will be added when you set up Firebase -->
+  <script src="app.js"></script>
+</body>
+</html>
