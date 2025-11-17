@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dashboards</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topnav">
+    <div class="brand">
+      <img src="assets/logo.png" alt="Next Play Stats" class="logo">
+      <span class="site-title">NEXT PLAY STATS</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="roles.html" class="active">Dashboards</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="actions">
+      <button id="contrastToggle" aria-pressed="false">Contrast</button>
+      <button id="loginBtn">Login</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="tabs" role="tablist" aria-label="User roles">
+      <button class="tab active" data-role="players">Players</button>
+      <button class="tab" data-role="coaches">Coaches</button>
+      <button class="tab" data-role="teams">Teams</button>
+      <button class="tab" data-role="nbl">NBL</button>
+    </div>
+
+    <section id="tabContent" class="tab-content">
+      <!-- Role cards are generated in HTML for clarity -->
+      <div class="role-panel" data-role="players">
+        <div class="card">
+          <h3>Players Dashboard 1</h3>
+          <p class="desc">Description shown inside the dashboard front page.</p>
+          <p class="meta">Last refresh: <span class="refresh">—</span></p>
+          <div class="embed-wrap">
+            <iframe class="embed-frame" data-embed-key="players-1" title="Players Dashboard 1" loading="lazy"></iframe>
+            <div class="embed-fallback hidden">
+              <p>Unable to load dashboard.</p>
+              <div class="fallback-actions">
+                <button class="retry">Retry</button>
+                <button class="open">Open in new tab</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Players Dashboard 2</h3>
+          <p class="desc">Description shown inside the dashboard front page.</p>
+          <p class="meta">Last refresh: <span class="refresh">—</span></p>
+          <div class="embed-wrap">
+            <iframe class="embed-frame" data-embed-key="players-2" title="Players Dashboard 2" loading="lazy"></iframe>
+            <div class="embed-fallback hidden">
+              <p>Unable to load dashboard.</p>
+              <div class="fallback-actions">
+                <button class="retry">Retry</button>
+                <button class="open">Open in new tab</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Repeat panels for coaches teams nbl with data-embed-key values coaches-1 coaches-2 etc -->
+      <div class="role-panel hidden" data-role="coaches">
+        <!-- two cards with data-embed-key coaches-1 coaches-2 -->
+      </div>
+
+      <div class="role-panel hidden" data-role="teams">
+        <!-- two cards with data-embed-key teams-1 teams-2 -->
+      </div>
+
+      <div class="role-panel hidden" data-role="nbl">
+        <!-- two cards with data-embed-key nbl-1 nbl-2 -->
+      </div>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
