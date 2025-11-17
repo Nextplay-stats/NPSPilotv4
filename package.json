@@ -1,0 +1,28 @@
+{
+  "name": "npspilotv4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serve . -l 5000",
+    "dev": "serve . -l 5000",
+    "check": "curl -f http://localhost:5000 || exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nextplay-stats/NPSPilotv4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nextplay-stats/NPSPilotv4/issues"
+  },
+  "homepage": "https://github.com/Nextplay-stats/NPSPilotv4#readme",
+  "devDependencies": {
+    "serve": "^14.2.5"
+  }
+}
+
+

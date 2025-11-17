@@ -1,0 +1,10 @@
+[build]
+  publish = "."
+  command = ""
+
+[dev]
+  command = "npx serve . -l 8888"
+  port = 8888
+
+[functions]
+  directory = "netlify/functions"
