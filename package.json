@@ -8,6 +8,7 @@
     "start": "serve . -l 5000",
     "dev": "serve . -l 5000",
     "check": "curl -f http://localhost:5000 || exit 1"
+    "build": "echo \"No build step\""
   },
   "repository": {
     "type": "git",
